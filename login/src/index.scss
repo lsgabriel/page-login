@@ -1,0 +1,60 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  $purple:#887AD3;$black:#111111;
+  $gray:#9D9D9D;$light-gray:#CBCBCB;
+  
+  body{
+    background-image: linear-gradient(to top, $purple, #7345E2);height: 95vh;
+  
+  }
+  
+  h1{font-weight: 300;margin-bottom: 25px;}
+  p{font-weight: 500;}
+  
+  .form{
+    background-color: white;border-radius:15px;
+    height: 85vh;
+  
+    h1{color: $black;text-align: center;font-size: 4rem;padding-top: 25px;}
+  
+    article{
+      width: 50vw;margin: auto;
+  
+      @media screen and (max-width: 380px) {
+        width: 100vw;
+      }
+  
+      .checkbox-div{
+        accent-color: $purple;margin-bottom: 1rem;
+        color: $gray;
+      }
+    }
+  }
+  
+  
+  .alternative {
+    margin-top: 1rem;margin-bottom:1rem;
+  
+    span{
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: $light-gray;
+      position: relative;
+  
+        &:before,&:after{
+          position: absolute;
+          content: '';
+          height: 1px;
+          width: 100px;
+          bottom: 50%;
+          right: 50px;
+          background: $light-gray;
+        }
+  
+        &::after{left:50px;}
+    }
+  }
